@@ -48,12 +48,38 @@
         <div class="content-wrapper">
           <div class="parameters">
             <div class="title">Найдём номера под ваши пожелания</div>
-
-          </div>
+            <form action="ArrivalData" method="post" name="Arrival" class="Arrival">
+              <span>Прибытие</span>
+              <p><select name="ArrivalList">
+                <option>ДД.ММ.ГГГГ</option>
+                <option>Option</option>
+                <option>Textarea</option>
+              </select></p>
+            </form>
+            <form action="DepartureData" method="post" name="Departure" class="Departure">
+              <span>Выезд</span>
+              <p><select name="DepartureList">
+                <option>ДД.ММ.ГГГГ</option>
+                <option>Option</option>
+                <option>Textarea</option>
+              </select></p>
+            </form>
+            <form action="GuestsData" method="post" name="Guests" class="Guests">
+              <span>Гости</span>
+              <p><select name="GuestsList">
+                <option>Сколько гостей</option>
+                <option>Option</option>
+                <option>Textarea</option>
+              </select></p>
+            </form>
+            <button class="Pick_Room">Подобрать номер <i class="fa fa-long-arrow-right"></i></button>
+          </div> <!--  /parameters  -->
 
 
         </div><!-- /content-wrapper -->
-        <footer></footer>
+        <footer>
+
+        </footer>
       </div> <!-- /app -->
     </div> <!-- /wrapper -->
   </body>
