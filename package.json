@@ -17,6 +17,13 @@
   },
   "license": "MIT",
   "dependencies": {
+    "air-datepicker": "^2.2.3",
+    "bootstrap": "^3.4.1",
+    "bootstrap-datepicker": "^1.9.0",
+    "bower": "^1.8.8",
+    "datepickk": "^1.4.1",
+    "i": "^0.3.6",
+    "jquery": "^3.5.1",
     "vue": "^2.6.11"
   },
   "devDependencies": {

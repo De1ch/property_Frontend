@@ -24,6 +24,7 @@ header
   background: #FFFFFF
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05)
   padding: 1% 5%
+  font-family: $mainFont
   a, .header-btn
     float: left
     color: black
@@ -76,7 +77,7 @@ header
   overflow: hidden
   background-color: #333
   font-family: Arial, Helvetica, sans-serif
-  .navbar a
+  a
   float: left
   font-size: 16px
   color: white
@@ -93,12 +94,12 @@ header
   font-size: 18px
   border: none
   outline: none
+  font-family: $mainFont
   color: black
   text-align: center
   text-decoration: none
   padding: 14px 16px
   background-color: inherit
-  font-family: inherit
   margin: 0
 
 .dropdown-content
@@ -127,6 +128,7 @@ header
   font-style: normal
   line-height: 15px
   font-size: 12px
+  font-family: $mainFont
   text-transform: uppercase
   border: 2px solid #BC9CFF
   color: #BC9CFF
@@ -146,6 +148,7 @@ header
   font-style: normal
   line-height: 15px
   font-size: 12px
+  font-family: $mainFont
   text-transform: uppercase
   cursor: pointer
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)
@@ -226,6 +229,7 @@ header
     width: 130%
 .parameters span
   line-height: 1.5
+  font-family: $mainFont
 .parameters select
   height: 40px
   background: transparent
@@ -245,6 +249,7 @@ header
   top: 77%
   font-style: normal
   font-weight: bold
+  font-family: $mainFont
   width: 78%
   line-height: 25px
   text-transform: uppercase
@@ -261,5 +266,160 @@ header
     top: 36%
 .Pick_Room:hover
   transform: scale(1.05)
-  
 
+// FOOTER
+.footer-nav
+  position: absolute
+  width: 100%
+  height: 50%
+  top: 100%
+  background: #FFFFFF
+  box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1)
+
+.footer-nav
+  .footer-logo
+    font-size: 25px
+    font-weight: bold
+    color: black
+    text-decoration: none
+    span
+      position: absolute
+      text-transform: uppercase
+      left: 15%
+      top: 25%
+  .footer-logo img
+    position: absolute
+    width: 4%
+    left: 10%
+    top: 22%
+
+.footer-text
+  position: absolute
+  width: 20%
+  font-family: $mainFont
+  left: 10%
+  top: 40%
+  font-style: normal
+  font-weight: normal
+  font-size: 14px
+  line-height: 24px
+  color: rgba(31, 32, 65, 0.75)
+
+footer
+  h1
+    position: absolute
+    font-family: $mainFont
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 15px
+    text-transform: uppercase
+    color: #1F2041
+.footer-nav1
+  position: absolute
+  left: 32%
+  top: 34%
+  a
+    font-family: $mainFont
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 17px
+    color: rgba(31, 32, 65, 0.5)
+  li
+    margin-bottom: 10%
+  h1
+    top: -20%
+
+.footer-nav2
+  position: absolute
+  left: 47%
+  top: 34%
+  a
+    font-family: $mainFont
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 17px
+    color: rgba(31, 32, 65, 0.5)
+  li
+    margin-bottom: 15%
+  h1
+    top: -20%
+
+.footer-nav3
+  position: absolute
+  left: 59%
+  top: 34%
+  a
+    font-family: $mainFont
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 17px
+    color: rgba(31, 32, 65, 0.5)
+  li
+    margin-bottom: 15%
+  h1
+    top: -28%
+
+.footer-nav4
+  position: absolute
+  left: 72%
+  top: 34%
+  a
+    font-family: $mainFont
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 17px
+    color: rgba(31, 32, 65, 0.5)
+  li
+    margin-bottom: 10%
+  h1
+    top: -25%
+  input
+    font-family: $mainFont
+    font-style: normal
+    font-weight: normal
+    line-height: 24px
+    width: 101%
+    height: 40px
+    background: #FFFFFF
+    border: 1px solid rgba(31, 32, 65, 0.25)
+    box-sizing: border-box
+    border-radius: 4px
+    padding-left: 5%
+.footer
+  position: absolute
+  width: 100%
+  height: 10%
+  top: 150%
+  border-top: rgba(31, 32, 65, 0.25) 1px solid
+  background: #FFFFFF
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05)
+  span
+    display: flex
+    position: absolute
+    font-family: $mainFont
+    font-style: normal
+    font-weight: normal
+    top: 40%
+    left: 10%
+    font-size: 14px
+    line-height: 17px
+    color: rgba(31, 32, 65, 0.75)
+  .links
+    position: absolute
+    top: 35%
+    left: 81%
+    font-size: 28px
+    font-style: normal
+    font-weight: normal
+    line-height: 23px
+    align-items: center
+    text-align: center
+    a
+      padding-right: 15px
+      text-decoration: none
+      color: #bc9cff

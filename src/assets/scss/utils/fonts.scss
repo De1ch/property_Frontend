@@ -3,6 +3,14 @@
 
 @import "mixins";
 
+@font-face {
+  font-family: "Montserrat";
+  src: url('/assets/fonts/Montserrat/Montserrat-Medium.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/Montserrat/Montserrat-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('/assets/fonts/Montserrat/Montserrat-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+  url('/assets/fonts/Montserrat/Montserrat-Medium.ttf')  format('truetype') /* Safari, Android, iOS */ /* Legacy iOS */
+}
+
 /*
   Сhoose one of the ways:
     1. handle menthod,

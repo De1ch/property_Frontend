@@ -1,12 +1,10 @@
 // JS
-import './js/'
-
+import './js/datepicker'
 // SCSS
 import './assets/scss/main.scss'
 
 // CSS
 import './assets/css/main.css'
-
 // // Vue.js
 // window.Vue = require('vue')
 //
