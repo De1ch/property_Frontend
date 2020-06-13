@@ -156,12 +156,12 @@ header
   min-height: 100%
 
 // main content
-.parameters
+.login-parameters
   position: absolute
   width: 28%
-  height: 47%
-  left: 10%
-  top: 18%
+  height: 45%
+  left: 35%
+  top: 28%
   background: #FFFFFF
   border: 1px solid rgba(0, 0, 0, 0.12)
   box-sizing: border-box
@@ -182,6 +182,17 @@ header
     line-height: 18px
     color: rgba(31, 32, 65, 0.75)
     padding: 0 10px
+  span
+    position: absolute
+    left: 10%
+    top: 81%
+    font-family: $mainFont
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 18px
+    align-items: center
+    color: #000000
 .title
   position: absolute
   width: 80%
@@ -192,51 +203,33 @@ header
   font-size: 24px
   line-height: 30px
   color: #1F2041
-.arrival
+.parameters-date
+  input
+    position: absolute
+    left: 10%
+    font-family: $mainFont
+    font-style: normal
+    font-weight: normal
+    line-height: 24px
+    width: 80%
+    height: 45px
+    background: #FFFFFF
+    border: 1px solid rgba(31, 32, 65, 0.25)
+    box-sizing: border-box
+    border-radius: 4px
+    padding: 4%
+  .email
+    top: 23%
+  .password
+    top: 38%
+.join
   position: absolute
   left: 10%
-  top: 30%
-  font-style: normal
-  font-weight: bold
-  font-size: 14px
-  line-height: 15px
-  color: #1F2041
-  text-transform: uppercase
-  select
-    width: 115%
-.departure
-  position: absolute
-  left: 51%
-  top: 30%
-  font-style: normal
-  font-weight: bold
-  font-size: 14px
-  line-height: 15px
-  color: #1F2041
-  text-transform: uppercase
-  select
-    width: 115%
-.guests
-  position: absolute
-  width: 60%
-  left: 10%
-  top: 52%
-  font-style: normal
-  font-weight: bold
-  font-size: 14px
-  line-height: 15px
-  color: #1F2041
-  text-transform: uppercase
-  select
-    width: 130%
-.pick_Room
-  position: absolute
-  left: 10%
-  top: 77%
+  top: 58%
   font-style: normal
   font-weight: bold
   font-family: $mainFont
-  width: 78%
+  width: 80%
   line-height: 25px
   text-transform: uppercase
   border-radius: 22px
@@ -249,9 +242,27 @@ header
   i
     position: absolute
     left: 90%
-    top: 36%
+    top: 39%
   &:hover
     transform: scale(1.05)
+.create
+  position: absolute
+  border-radius: 22px
+  top: 78%
+  left: 67%
+  font-style: normal
+  line-height: 15px
+  font-size: 12px
+  font-family: $mainFont
+  text-transform: uppercase
+  border: 2px solid #BC9CFF
+  color: #BC9CFF
+  padding: 12px
+  cursor: pointer
+  background: transparent
+  transition: all 0.3s ease
+.create:hover
+  transform: scale(1.05)
 
 // FOOTER
 .footer-nav

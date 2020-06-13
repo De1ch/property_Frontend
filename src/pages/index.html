@@ -17,31 +17,33 @@
               <a href="#" class="logo"><img src="assets/img/logo.png" alt="logo" href="index.html">
                 <span href="#">Toxin</span></a>
               <div class="header-right">
-                <a href="#">О нас</a>
+                <a href="#" class="decoration">О нас</a>
                 <div class="dropdown">
                   <button class="dropbtn">Услуги
                     <i class="fa fa-caret-down"></i>
                   </button>
                   <div class="dropdown-content">
-                    <a href="#">Услуги 1</a>
-                    <a href="#">Услуги 2</a>
-                    <a href="#">Услуги 3</a>
+                    <a href="#" class="decoration">Услуги 1</a>
+                    <a href="#" class="decoration">Услуги 2</a>
+                    <a href="#" class="decoration">Услуги 3</a>
                   </div>
                 </div>
-                <a href="#">Вакансии</a>
-                <a href="#">Новости</a>
+                <a href="#" class="decoration">Вакансии</a>
+                <a href="#" class="decoration">Новости</a>
                 <div class="dropdown">
                   <button class="dropbtn">Соглашения
                     <i class="fa fa-caret-down"></i>
                   </button>
                   <div class="dropdown-content">
-                    <a href="#">Соглашение 1</a>
-                    <a href="#">Соглашение 2</a>
-                    <a href="#">Соглашение 3</a>
+                    <a href="#" class="decoration">Соглашение 1</a>
+                    <a href="#" class="decoration">Соглашение 2</a>
+                    <a href="#" class="decoration">Соглашение 3</a>
                   </div>
                 </div>
-                    <button class="login">Войти</button>
-                    <button class="register">Зарегистрироваться</button>
+                  <div class="header-btn">
+                      <a href="login.html"><button class="login">Войти</button></a>
+                      <a href="login.html"><button class="register">Зарегистрироваться</button></a>
+                  </div>
               </div>
             </div>
           </div>
@@ -49,13 +51,13 @@
         <div class="content-wrapper">
           <div class="parameters">
             <div class="title">Найдём номера под ваши пожелания</div>
-            <form action="ArrivalData" method="post" name="Arrival" class="Arrival" id="DataList">
+            <form action="arrivalData" method="post" name="arrival" class="arrival" id="DataList">
               <span>Прибытие</span>
               <p><select name="ArrivalList">
                 <option class="calendar" name="date" value="">ДД.ММ.ГГГГ</option>
               </select></p>
             </form>
-            <form action="DepartureData" method="post" name="Departure" class="Departure">
+            <form action="departureData" method="post" name="departure" class="departure">
               <span>Выезд</span>
               <p><select name="DepartureList" class="date form_datetime">
                 <option class="date form_datetime">ДД.ММ.ГГГГ</option>
@@ -63,7 +65,7 @@
                 <option>Textarea</option>
               </select></p>
             </form>
-            <form action="GuestsData" method="post" name="Guests" class="Guests">
+            <form action="guestsData" method="post" name="guests" class="guests">
               <span>Гости</span>
               <p><select name="GuestsList" >
                 <option>Сколько гостей</option>
@@ -71,7 +73,7 @@
                 <option>Textarea</option>
               </select></p>
             </form>
-            <button class="Pick_Room">Подобрать номер <i class="fa fa-long-arrow-right"></i></button>
+            <button class="pick_Room">Подобрать номер <i class="fa fa-long-arrow-right"></i></button>
           </div> <!--  /parameters  -->
         </div><!-- /content-wrapper -->
         <footer>
