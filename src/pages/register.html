@@ -49,17 +49,40 @@
             </div>
         </header>
         <div class="content-wrapper">
-            <div class="login-parameters">
-                <div class="title">Войти</div>
+            <div class="register-parameters">
+                <div class="title">Регистрация аккаунта</div>
                 <div class="parameters-date">
                     <ul>
-                        <li><input type="email" placeholder="Email" class="email"></li>
-                        <li><input type="password" placeholder="Пароль" class="password"></li>
+                        <li><input type="email" placeholder="Имя" class="name"></li>
+                        <li><input type="password" placeholder="Фамилия" class="last_name"></li>
+                        <div class="radiobutton">
+                            <input class="radiobutton__input" type="radio" id="autoid-1" name="sex" value="male" checked>
+                            <label class="radiobutton__label male" for="autoid-1"><span class="radiobutton__presentation"></span>Мужчина</label>
+                        </div>
+                        <div class="radiobutton">
+                            <input class="radiobutton__input" type="radio" id="autoid-2" name="sex" value="female">
+                            <label class="radiobutton__label female" for="autoid-2"><span class="radiobutton__presentation"></span>Женщина
+                            </label>
+                        </div>
+                        <form action="birthData" method="post" name="birth" class="birth">
+                            <span>Дата рождения</span>
+                            <p><input type="date" class="birthDate"></p>
+                        </form>
+                        <form action="auth_serviceData" method="post" name="birth" class="auth_service">
+                            <span>Данные для входа в серивис</span>
+                            <p><input type="email" placeholder="Email" class="emailDate"></p><br>
+                            <p><input type="password" placeholder="Пароль" class="passwordDate"></p>
+                        </form>
                     </ul>
                 </div>
-                <button class="join">Войти <i class="fa fa-long-arrow-right"></i></button>
-                <a href="#"><span>Нет аккаунта на Toxin?</span></a>
-                <a href="register.html"><button class="create">Создать</button></a>
+                <div class="toggle">
+                    <input class="toggle__input" type="checkbox" id="autoid-3" name="recievoffers">
+                    <label class="toggle__label" for="autoid-3"><span class="toggle__presentation"></span>Получать спецпредложения
+                    </label>
+                </div>
+                <button class="pay">Перейти к оплате <i class="fa fa-long-arrow-right"></i></button>
+                <a href="#" class="have_account"><span>Уже есть аккаунт на Toxin</span></a>
+                <a href="login.html"><button class="join_in">Войти</button></a>
             </div> <!--  /parameters  -->
         </div><!-- /content-wrapper -->
         <footer>
