@@ -52,17 +52,11 @@
             <div class="title">Найдём номера под ваши пожелания</div>
             <form action="arrivalData" method="post" name="arrival" class="arrival" id="DataList">
               <span>Прибытие</span>
-              <p><select name="ArrivalList">
-                <option class="calendar" name="date" value="">ДД.ММ.ГГГГ</option>
-              </select></p>
+              <p><input type="date" class="birthDate"></p>
             </form>
             <form action="departureData" method="post" name="departure" class="departure">
               <span>Выезд</span>
-              <p><select name="DepartureList" class="date form_datetime">
-                <option class="date form_datetime">ДД.ММ.ГГГГ</option>
-                <option>Option</option>
-                <option>Textarea</option>
-              </select></p>
+              <p><input type="date" class="birthDate"></p>
             </form>
             <form action="guestsData" method="post" name="guests" class="guests">
               <span>Гости</span>
