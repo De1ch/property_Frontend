@@ -5,6 +5,7 @@ import './assets/scss/main.scss'
 
 // CSS
 import './assets/css/main.css'
+import './assets/css/filter.css'
 // // Vue.js
 // window.Vue = require('vue')
 //
