@@ -237,7 +237,7 @@ header
     font-size: 14px
 .guests
   position: absolute
-  width: 76%
+  width: 78%
   left: 10%
   top: 52%
   font-style: normal
@@ -426,6 +426,8 @@ footer
       text-decoration: none
       color: #bc9cff
 
+
+// number of people living
 .dropdown
   position: relative
 .dropdown__show
@@ -553,3 +555,46 @@ footer
   font-size: 12px
   line-height: 30px
   text-transform: uppercase
+.guest-counter__spin
+  margin: 6px -6px 5px 0
+.guest-counter__buttons-panel
+  display: flex
+  justify-content: space-between
+  margin: 18px -8px 10px -8px
+.guest-counter__clear-button
+  display: inline-block
+  justify-self: flex-start
+  width: auto
+.guest-counter__clear-button_hidden
+  display: none
+.guest-counter__apply-button
+  display: inline-block
+  justify-self: flex-end
+  width: auto
+  transform: translateX(5px)
+.button_tiny
+  background: none
+  height: 18px
+  border: none
+  color: #bc9cff
+  padding: 0px 5px
+.button_arrowed::after
+  content: ""
+  display: block
+  position: absolute
+  width: 18px
+  height: 18px
+  top: 50%
+  right: 15px
+  transform: translateY(-50%)
+  background-repeat: no-repeat
+.other_text
+  position: absolute
+  width: 20%
+  top: 90%
+  right: 5%
+  font-family: Montserrat
+  font-style: normal
+  font-weight: normal
+  font-size: 14px
+  line-height: 24px
