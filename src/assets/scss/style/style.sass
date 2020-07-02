@@ -237,7 +237,7 @@ header
     font-size: 14px
 .guests
   position: absolute
-  width: 60%
+  width: 76%
   left: 10%
   top: 52%
   font-style: normal
@@ -425,3 +425,131 @@ footer
       padding-right: 15px
       text-decoration: none
       color: #bc9cff
+
+.dropdown
+  position: relative
+.dropdown__show
+  position: absolute
+  right: 10px
+  width: 1px
+  height: 1px
+  overflow: hidden
+  padding: 0
+  margin: -1px
+  border: none
+  outline: none
+  clip: rect(1px, 1px, 1px, 1px)
+.dropdown__backdrop
+  display: none
+  position: fixed
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+  z-index: 0
+.dropdown__show:checked ~ .dropdown__backdrop
+  display: block
+.dropdown__label
+  display: block
+  position: relative
+  background-color: white
+  border: solid 1px rgba(31, 32, 65, 0.25)
+  border-radius: 4px
+  color: rgba(31, 32, 65, 0.75)
+  font-family: 'Montserrat', sans-serif
+  font-size: 14px
+  padding: 12px
+  padding-left: 15px
+  padding-right: 60px
+  background-repeat: no-repeat
+  background-position: calc(100% - 15px) center
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+  cursor: pointer
+  user-select: none
+  z-index: 0
+.dropdown__label:hover
+  color: rgba(31, 32, 65, 0.75)
+  border-color: rgba(31, 32, 65, 0.5)
+.dropdown__show:checked ~ .dropdown__label
+  color: rgba(31, 32, 65, 0.75)
+  border-color: rgba(31, 32, 65, 0.5)
+  border-radius: 4px 4px 0 0
+.dropdown__show:focus ~ .dropdown__label
+  color: rgba(31, 32, 65, 0.75)
+  border-color: rgba(31, 32, 65, 0.5)
+.dropdown__content
+  position: absolute
+  display: none
+  box-sizing: border-box
+  min-width: 100%
+  border: solid 1px rgba(31, 32, 65, 0.5)
+  border-radius: 0 0 4px 4px
+  background-color: white
+  padding: 0 13px
+  overflow: auto
+  transform: translate(0, -1px)
+  z-index: 10
+.dropdown__show:checked ~ .dropdown__content
+  display: block
+.horizontal-menu__item_dropdown .horizontal-menu__link::after
+  content: "^"
+  display: inline-block
+  transform: scale(2, -1) translate(2px, -1px)
+.room-demand__spin
+  margin: 6px -6px 7px 0
+.guest-counter__spin
+  margin: 6px -6px 5px 0
+.guest-counter__buttons-panel
+  display: flex
+  justify-content: space-between
+  margin: 18px -8px 10px -8px
+.guest-counter__clear-button
+  display: inline-block
+  justify-self: flex-start
+  width: auto
+.guest-counter__clear-button_hidden
+  display: none
+.guest-counter__apply-button
+  display: inline-block
+  justify-self: flex-end
+  width: auto
+  transform: translateX(5px)
+.spin__button
+  display: inline-block
+  box-sizing: border-box
+  width: 30px
+  height: 30px
+  border-radius: 50%
+  border: solid 1px rgba(31, 32, 65, 0.5)
+  background-color: white
+  cursor: pointer
+.spin__button:disabled
+  border-color: rgba(31, 32, 65, 0.25)
+  color: rgba(31, 32, 65, 0.25)
+  cursor: auto
+.spin__button:focus
+  outline: none
+  box-shadow: 0 0 1px 2px white, 0 0 3px 3px rgba(0, 0, 255, 0.15)
+.spin__button:active
+  outline: none
+  box-shadow: 0 0 1px 2px white, 0 0 3px 3px rgba(255, 0, 0, 0.3)
+.spin__counter
+  display: inline-block
+  width: 25px
+  padding: 5px 0
+  border: none
+  text-align: center
+  font-family: 'Montserrat-Bold', sans-serif
+  font-weight: bold
+  font-size: 12px
+.spin__controls
+  float: right
+.spin__lable
+  display: inline-block
+  font-family: 'Montserrat-Bold', sans-serif
+  font-weight: bold
+  font-size: 12px
+  line-height: 30px
+  text-transform: uppercase

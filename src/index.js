@@ -4,7 +4,7 @@ import './js/datepicker'
 import './assets/scss/main.scss'
 
 // CSS
-// import './assets/css/filter.css'
+//  import './assets/css/index.css'
 
 // // Vue.js
 // window.Vue = require('vue')
