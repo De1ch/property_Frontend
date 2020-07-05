@@ -161,6 +161,7 @@
   padding: 12px
   padding-left: 15px
   padding-right: 60px
+  background-image: url(/assets/img/icons/expand_more.svg)
   background-repeat: no-repeat
   background-position: calc(100% - 15px) center
   white-space: nowrap
@@ -169,6 +170,11 @@
   cursor: pointer
   user-select: none
   z-index: 0
+.dropdown__show:checked ~ .dropdown__label
+  color: rgba(31, 32, 65, 0.75)
+  border-color: rgba(31, 32, 65, 0.5)
+  border-radius: 4px 4px 0 0
+  background-image: url(/assets/img/icons/expand_less.svg)
 .dropdown__label:hover
   color: rgba(31, 32, 65, 0.75)
   border-color: rgba(31, 32, 65, 0.5)
@@ -274,6 +280,7 @@
   background: none
   height: 18px
   border: none
+  cursor: pointer
   color: #bc9cff
   padding: 0px 5px
 .button_arrowed::after
